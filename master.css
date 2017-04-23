@@ -1,0 +1,82 @@
+body{
+  margin: 0;
+  background-image: url(images/ep_naturalblack.png);
+}
+.titulo{
+  background-color: #1196FF;
+  display: flex;
+  color: white;
+  align-items: center;
+  height: auto;
+  flex-direction: column;
+}
+
+h1{
+  padding-top: 10px;
+  font-family: 'Rubik Mono One', sans-serif;
+  font-size: 55px;
+  margin: 0 auto;
+}
+
+h2{
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+}
+
+hr {
+  margin: 0px;
+  color: white;
+  border-width: initial;
+  border-style: solid;
+}
+
+.Tablero{
+  width: 500px;
+  margin: 48px auto;
+  position: relative;
+}
+
+.fila{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#barra_vertical{
+  position: relative;
+  float:left;
+  border-left: 2px solid white;
+  width:1px;
+  height:150px;
+  border-width: thick;
+}
+
+.pieza{
+  color: white;
+  width: 150px;
+  padding: 7px;
+  font-family: 'Rubik Mono One', sans-serif;
+  font-size: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.turnos{
+  color: white;
+  font-size: 39px;
+  font-family: 'Rubik Mono One', sans-serif;
+  position: absolute;
+  top: 359px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.turno1{
+  left: 50px;
+}
+
+.turno2{
+  right: 50px;
+}
