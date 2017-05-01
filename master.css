@@ -5,6 +5,7 @@ body{
 .titulo{
   background-color: #1196FF;
   display: flex;
+  position: relative;
   color: white;
   align-items: center;
   height: auto;
@@ -32,13 +33,13 @@ hr {
 
 .Tablero{
   width: 500px;
-  margin: 48px auto;
+  height: 500px;
+  margin: 6% auto;
   position: relative;
 }
 
 .fila{
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
 }
 
@@ -47,14 +48,13 @@ hr {
   float:left;
   border-left: 2px solid white;
   width:1px;
-  height:150px;
+  height:162px;
   border-width: thick;
 }
 
 .pieza{
   color: white;
-  width: 150px;
-  padding: 7px;
+  width: 166px;
   font-family: 'Rubik Mono One', sans-serif;
   font-size: 100px;
   display: flex;
@@ -63,7 +63,7 @@ hr {
 }
 
 .turnos{
-  color: white;
+  color: lightskyblue;
   font-size: 39px;
   font-family: 'Rubik Mono One', sans-serif;
   position: absolute;
@@ -79,4 +79,67 @@ hr {
 
 .turno2{
   right: 50px;
+}
+
+@media screen and (max-width: 960px) {
+  .turnos{
+  font-size: 35px;
+ }
+ .turno1{
+   left: 20px;
+ }
+.turno2{
+  right: 20px;
+}
+}
+
+@media screen and (max-width: 850px) {
+  .turnos{
+    top: 120px;
+    display: inline-flex;
+    font-size: 30px;
+  }
+  .Tablero{
+    padding-top: 60px
+  }
+}
+
+@media screen and (max-width: 530px) {
+  h1{
+    font-size: 33px;
+  }
+  .turnos{
+    top: 91px;
+    font-size: 20px;
+  }
+  .Tablero{
+    padding-top: 40px;
+    width: 340px;
+  }
+  #barra_vertical{
+    height: 115px;
+  }
+  .pieza{
+    width: 109px;
+    font-size: 93px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  h1{
+    font-size:20px;
+  }
+  .turnos {
+    top: 75px;
+    font-size: 16px;
+  }
+  .Tablero{
+    width: 250px;
+  }
+  #barra_vertical{
+    height: 80px;
+  }
+  .pieza{
+    font-size: 64px;
+  }
 }

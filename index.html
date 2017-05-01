@@ -1,53 +1,58 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Tic Tac Toe</title>
-    <link rel="stylesheet" href="master.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:600|Rubik+Mono+One" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/sweetalert2/6.6.0/sweetalert2.min.css">
-  </head>
-  <body>
-    <script src="https://cdn.jsdelivr.net/sweetalert2/6.6.0/sweetalert2.min.js"></script>
-    <header class="titulo">
-      <h1>Tic Tac Toe</h1>
-      <h2>Hecho por: Daniel Peralta</h2>
-    </header>
-    <div class="turnos turno1"><span name= "jugador"></span><span id="player1"></span></div>
-    <div class="Tablero">
-      <div class="fila">
-        <div class="pieza" name="1"></div>
-        <div id="barra_vertical" ></div>
 
-        <div class="pieza" name="1"></div>
-        <div id="barra_vertical"></div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable= no" />
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="master.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:600|Rubik+Mono+One" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/sweetalert2/6.6.0/sweetalert2.min.css">
+</head>
 
-        <div class="pieza" name="1"></div>
-      </div>
-      <hr />
-      <div class="fila">
-        <div class="pieza" name="1" ></div>
-        <div id="barra_vertical"></div>
+<body>
+  <script src="https://cdn.jsdelivr.net/sweetalert2/6.6.0/sweetalert2.min.js"></script>
+  <header class="titulo">
+    <h1>Tic Tac Toe</h1>
+    <h2>Hecho por: Daniel Peralta</h2>
+  </header>
+  <div class="contenedor-turnos">
+    <div class="turnos turno1"><span name="jugador"></span><span id="player1"></span></div>
+    <div class="turnos turno2"> <span name="jugador"></span><span id="player2"></span></div>
+  </div>
+  <div class="Tablero">
+    <div class="fila">
+      <div class="pieza" name="1"></div>
+      <div id="barra_vertical"></div>
 
-        <div class="pieza" name="1" ></div>
-        <div id="barra_vertical"></div>
+      <div class="pieza" name="1"></div>
+      <div id="barra_vertical"></div>
 
-        <div class="pieza" name= "1" ></div>
-      </div>
-      <hr>
-      <div class="fila">
-        <div class="pieza" name = "1"></div>
-        <div id="barra_vertical"></div>
-
-        <div class="pieza" name="1" ></div>
-        <div id="barra_vertical"></div>
-
-        <div class="pieza" name="1" ></div>
-      </div>
-      </div>
+      <div class="pieza" name="1"></div>
     </div>
-    <div class="turnos turno2"> <span name= "jugador"></span><span id="player2"></span></div>
+    <hr />
+    <div class="fila">
+      <div class="pieza" name="1"></div>
+      <div id="barra_vertical"></div>
 
-    <script type="text/javascript" src="main.js" ></script>
-  </body>
+      <div class="pieza" name="1"></div>
+      <div id="barra_vertical"></div>
+
+      <div class="pieza" name="1"></div>
+    </div>
+    <hr>
+    <div class="fila">
+      <div class="pieza" name="1"></div>
+      <div id="barra_vertical"></div>
+
+      <div class="pieza" name="1"></div>
+      <div id="barra_vertical"></div>
+
+      <div class="pieza" name="1"></div>
+    </div>
+  </div>
+  </div>
+  <script type="text/javascript" src="main.js"></script>
+</body>
+
 </html>
